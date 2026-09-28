@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1790598209251,"sparkVersion":"4.2.0","uid":"StringIndexer_917d09fe8d5e","paramMap":{"handleInvalid":"keep","inputCol":"DEG_URBAN_NAME","outputCol":"DEG_URBAN_NAME_index"},"defaultParamMap":{"handleInvalid":"error","outputCol":"StringIndexer_917d09fe8d5e__output","stringOrderType":"frequencyDesc"}}
