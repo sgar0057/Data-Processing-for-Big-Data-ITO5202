@@ -35,7 +35,25 @@ Expected output:
 
 Connection to localhost port 9092 [tcp/*] succeeded!
 
-### 4. Run the producer
+### 4. Start Jupyter notebook with the Spark/Kafka connecter 
+run the following: 
+PYSPARK_SUBMIT_ARGS="--driver-class-path $HOME/.ivy2.5.2/jars/org.apache.kafka_kafka-clients-3.9.2.jar:$HOME/.ivy2.5.2/jars/org.apache.spark_spark-sql-kafka-0-10_2.13-4.2.0.jar:$HOME/.ivy2.5.2/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.13-4.2.0.jar:$HOME/.ivy2.5.2/jars/org.apache.commons_commons-pool2-2.13.1.jar --packages org.apache.spark:spark-sql-kafka-0-10_2.13:4.2.0 pyspark-shell" jupyter notebook
+
+### 5. Run the assessment 2 notebook Part B
+1. Create a local Spark session
+2. Connect to Kafka topic events
+3. Read Kafka message values as JSON
+4. Parse the JSON using schema
+5. Explode JSON array into individual crash records
+6 Converts event_timestamp into a Spark timestamp
+7. Load the persisted model from models/a2_model
+8. Apply the complete model pipeline to the streaming data
+9. Perform a one minute window aggregation by predicted class
+10. Write completed window results to output/predictions in Parquet format
+
+The streaming query is named vicRoads_prediction_windows and uses output/predictions for the output and checkpoints/predictions for Spark checkpointing.
+
+### 6. Run the producer
 
 Activate the project environment:
 
