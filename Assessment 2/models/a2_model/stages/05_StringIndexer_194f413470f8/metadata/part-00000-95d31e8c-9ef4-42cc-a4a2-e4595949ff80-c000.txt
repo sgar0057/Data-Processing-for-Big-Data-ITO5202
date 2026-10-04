@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1791071873182,"sparkVersion":"4.2.0","uid":"StringIndexer_194f413470f8","paramMap":{"handleInvalid":"keep","inputCol":"SPEED_ZONE","outputCol":"SPEED_ZONE_index"},"defaultParamMap":{"handleInvalid":"error","outputCol":"StringIndexer_194f413470f8__output","stringOrderType":"frequencyDesc"}}

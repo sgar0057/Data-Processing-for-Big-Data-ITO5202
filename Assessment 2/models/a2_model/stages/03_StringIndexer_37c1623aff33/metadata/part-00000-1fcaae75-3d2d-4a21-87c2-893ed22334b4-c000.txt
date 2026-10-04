@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1791071872937,"sparkVersion":"4.2.0","uid":"StringIndexer_37c1623aff33","paramMap":{"handleInvalid":"keep","inputCol":"POLICE_ATTEND","outputCol":"POLICE_ATTEND_index"},"defaultParamMap":{"handleInvalid":"error","outputCol":"StringIndexer_37c1623aff33__output","stringOrderType":"frequencyDesc"}}
